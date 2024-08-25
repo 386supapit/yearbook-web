@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YEARBOOK WEB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <div class="book">
+        <div class="page cover active" onclick="nextPage(this)">
+            <div class="page-content">
+                <h1>YEAR<br>BOOK<br>CSMJU</h1>
+            </div>
+        </div>
+        <div class="page" id="page-1">
+            <div class="page-content">
+                <h1>YEARBOOK CSMJU</h1>
+                <p>Generation</p>
+                <div id="card-container-1" class="card-container"></div>
+            </div>
+        </div>
+        <div class="page" id="page-2">
+            <div class="page-content">
+                <h1>YEARBOOK CSMJU</h1>
+                <p>Generation</p>
+                <button class="custom-button-back" onclick="goBack()">Back</button>
+                <div id="card-container-2" class="card-container"></div>
+            </div>
+        </div>
+        <div class="page" id="page-3">
+            <div class="page-content">
+                <h1>YEARBOOK CSMJU</h1>
+                <p>Information</p>
+                <button class="custom-button-back" onclick="goBack()">Back</button>
+                <div class="card-container">
+                    <div class="card" style="width: 250px;">
+                        <img id="fullScreenImg" src="386.jpeg" class="card-img-top" alt="29">
+                        <div class="card-body">
+                            <p class="card-text">ID 386<br>Supapit Pumnin<br>I don't always have time to study but when I do I still don't.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>© 2024 YEARBOOK WEB</p>
+    </footer>
+    <script src="js/scripts.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
